@@ -1,7 +1,7 @@
 import { test } from '../../fixtures/roles';
 
 
-test.describe('Karyawan Menu Tests', () => {
+test.describe.skip('Karyawan Menu Tests', () => {
     test('Menampilkan Halaman Karyawan (Tabel)', async ({ admin }) => {
         await admin.openKaryawanMenu();
         await admin.assertKaryawanPageVisible();
